@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 56px;
+    width: 100vw;
+
+    background-color: #000;
+}
+
+.logo {
+    width: 80px;
+    height: 32px;
+    margin-left: 164px;
+}
+
+.container-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    color: #fff;
+
+    margin-right: 169px;
+}
+
+.container-navigation nav {
+    cursor: pointer;
+    margin-right: 32px;
+}
+
+.input input {
+    margin-right: 32px;
+    width: 450px;
+    height: 32px;
+
+}
