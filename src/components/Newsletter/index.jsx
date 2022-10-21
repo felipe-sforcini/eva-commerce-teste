@@ -8,10 +8,10 @@ export default function Newsletter() {
                 <img className='newsletter-icon' src={NewsletterIcon} alt="newsletter icon" />
                 <span>Receba nossas novidades, descontos e muito mais</span>
             </section>
-            <section className='formSubmit'>
+            <form className='formSubmit'>
                 <input className='form' type="text" placeholder='Digite seu nome' />
                 <input className='form' type="email" placeholder='Digite seu email' />
-            </section>
+            </form>
             <button className='btn-newsletter' type='submit'>Eu quero receber novidades!</button>
         </div>
     )
