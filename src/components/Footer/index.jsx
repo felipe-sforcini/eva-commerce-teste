@@ -8,6 +8,7 @@ export default function Footer() {
     return (
         <footer>
             <strong>Eva Shop</strong>
+            <div></div>
             <div className='info'>
                 <div className="container container-menu">
                     <nav className='navigation-menu'>
@@ -19,7 +20,7 @@ export default function Footer() {
                                 alt="icon store" />
                         </div>
                         <ul>
-                            <li>Quem somos</li>
+                            <li> Quem somos</li>
                             <li>Políticas de privacidade</li>
                             <li>Feedback de clientes</li>
                             <li>Trocas e devoluções</li>
