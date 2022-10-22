@@ -1,0 +1,24 @@
+.container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-highlights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous-arrow {
+    margin-right: 33px;
+}
+
+.next-arrow {
+    margin-left: 33px;
+}
+
+.highlight-title {
+    align-self: flex-start;
+    padding-left: 150px
+}
