@@ -1,37 +1,40 @@
-import { useEffect, useState } from 'react';
 import './style.css';
-import api from '../../services/api';
 import CardProduct from '../CardProduct';
+import PreviousArrow from '../../assets/svg/previous-arrow.svg';
+import NextArrow from '../../assets/svg/next-arrow.svg';
 
-export default function Highlights({ id }) {
-    const [products, setProducts] = useState([]);
+export default function Highlights({ products, setProducts, pagination, setPagination }) {
 
-    try {
-        useEffect(() => {
-            async function loadProducts() {
-                const response = await api.get(`products`);
+    function handlePagination(value) {
+        let start = pagination.start;
+        let end = pagination.end;
 
-                const data = await response.data;
-                setProducts(data);
-            }
-            loadProducts();
-        }, []);
-    } catch (e) {
-        console.log(e.message);
+        if (value === 'previous' && start > 0) {
+            start -= 4;
+            end -= 4;
+        } else if (value === 'next' && end < products.length) {
+            start += 4;
+            end += 4;
+        }
+        setPagination({
+            start, end
+        });
     }
 
     return (
         <div className="container-highlights">
-            {products.map((product, index) => {
+            <img className='previous-arrow' onClick={() => handlePagination('previous')} src={PreviousArrow} alt="previous arrow" />
+            {products.slice(pagination.start, pagination.end).map((product) => {
                 return (
                     <CardProduct
-                        key={index}
+                        key={product.id}
                         image={product.images_product[0]}
                         name={product.name}
                         price={product.price}
                     />
                 )
             })}
+            <img className='next-arrow' onClick={() => handlePagination('next')} src={NextArrow} alt="next arrow" />
         </div>
     )
 }

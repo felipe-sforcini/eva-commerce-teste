@@ -12,14 +12,15 @@ export default function CardProduct({ index, image, name, price }) {
                 setImages(productImage.path);
             }
             loadCard();
-        }, [])
+        }, []);
+
     } catch (e) {
         console.log(e.message);
     }
 
     return (
-        <div className="container-card">
-            <img className='card-image' key={index} src={images} alt="product image" />
+        <div className='container-card'>
+            <img className='card-image' key={index} src={images} alt={name} />
             <span>{name}</span>
             <strong>R$ {Number(price).toFixed(2).replace('.', ',')}</strong>
         </div>

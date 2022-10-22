@@ -3,3 +3,11 @@
     align-items: center;
     justify-content: center;
 }
+
+.previous-arrow {
+    margin-right: 33px;
+}
+
+.next-arrow {
+    margin-left: 33px;
+}
