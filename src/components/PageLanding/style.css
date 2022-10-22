@@ -5,17 +5,17 @@
 .shadow-banner {
     position: absolute;
     width: 100vw;
-    height: 374px;
+    height: 37.4rem;
     background: linear-gradient(90.99deg, #000000 1.53%, rgba(32, 32, 32, 0.52) 56.83%, rgba(196, 196, 196, 0) 98.06%);
     opacity: 90%;
 }
 
 .image-banner {
     width: 100vw;
-    height: 374px;
+    height: 37.4rem;
 
     background-image: url(../../assets/images/banner.jpeg);
-    background-position-y: -200px;
+    background-position-y: -20rem;
     background-size: cover;
 }
 
@@ -24,39 +24,39 @@
     flex-direction: column;
 
     position: absolute;
-    left: 200px;
-    bottom: 171px;
+    left: 20rem;
+    bottom: 17rem;
 }
 
 .title-banner strong {
     font-weight: 400;
-    font-size: 42px;
-    line-height: 49px;
+    font-size: 4.2rem;
+    line-height: 5rem;
 
     color: #FDFDFD;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
 
 .title-banner span {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
 
     color: #FDFDFD;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
 
 .information-pageLanding {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 122px 0 64px 0;
+    padding: 12.2rem 0 6.4rem 0;
 
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
 
     color: #E11383;
 }
@@ -66,16 +66,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 0.8rem;
 }
 
 .safe-website,
 .payment-card {
-    padding-right: 64px;
-    border-right: 1px solid #DADFEB;
+    padding-right: 6.4rem;
+    border-right: 0.1rem solid #DADFEB;
 }
 
 .payment-card,
 .delivery {
-    padding-left: 64px;
+    padding-left: 6.4rem;
 }

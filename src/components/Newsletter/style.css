@@ -7,53 +7,53 @@
     background-color: #3C3E40;
 
     width: 100vw;
-    padding: 48px 0 48px 0;
+    padding: 4.8rem 0 4.8rem 0;
 }
 
 .title {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 19px;
+    gap: 1.9rem;
 
     color: #FDFDFD;
 
-    margin-bottom: 48px;
+    margin-bottom: 4.8rem;
 }
 
 .formSubmit {
     display: flex;
-    gap: 0 8px;
-    margin-bottom: 59px;
+    gap: 0 0.8rem;
+    margin-bottom: 5.9rem;
 }
 
 .form {
     border: none;
     outline: none;
-    padding: 6px 0 6px 5px;
-    width: 278px;
-    height: 32px;
-    border-radius: 4px;
+    padding: 0.6rem 0 0.6rem 0.5rem;
+    width: 27.8rem;
+    height: 3.2rem;
+    border-radius: 0.4rem;
 }
 
 .newsletter-icon {
     filter: invert(100%);
-    width: 49px;
-    height: 40px;
+    width: 4.9rem;
+    height: 4rem;
 }
 
 .btn-newsletter {
     cursor: pointer;
     appearance: none;
     border: none;
-    padding: 11px 32px;
+    padding: 1.1rem 3.2rem;
 
     color: #FDFDFD;
 
     background: #E11383;
-    border-radius: 8px;
+    border-radius: 0.8rem;
 }

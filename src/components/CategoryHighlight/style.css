@@ -7,14 +7,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 3.2rem;
 }
 
 .container-highlights {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 3.2rem;
 }
 
 .highlight-title {

@@ -3,16 +3,16 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    height: 56px;
+    height: 8vh;
     width: 100vw;
 
     background-color: #000;
 }
 
 .logo {
-    width: 80px;
-    height: 32px;
-    margin-left: 164px;
+    width: 8rem;
+    height: 3.2rem;
+    margin-left: 16.4rem;
 }
 
 .container-navigation {
@@ -20,8 +20,8 @@ header {
     align-items: center;
 
     color: #fff;
+    width: 70vw;
 
-    margin-right: 169px;
 }
 
 .container-navigation nav {
@@ -29,11 +29,11 @@ header {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-right: 32px;
+    margin-right: 3.2rem;
 
     font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
 
     color: #FDFDFD;
 }
@@ -48,20 +48,20 @@ header {
 
 .search input {
     margin-right: 32px;
-    width: 450px;
-    height: 32px;
+    width: 45rem;
+    height: 3.2rem;
 }
 
 .search-icon {
     position: absolute;
-    right: 45px;
+    right: 4.5rem;
 }
 
 .navigation-icon {
-    width: 14px;
-    height: 16px;
+    width: 1.4rem;
+    height: 1.6rem;
 
-    margin-left: 8px;
+    margin-left: 0.8rem;
 }
 
 .color-white {
