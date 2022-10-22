@@ -7,6 +7,7 @@ export default function PageLanding() {
     return (
         <div className="container-pageLanding">
             <div className="container-banner">
+                <div className="shadow-banner"></div>
                 <div className="image-banner"></div>
                 <div className="title-banner">
                     <strong>Seus livros Favoritos</strong>

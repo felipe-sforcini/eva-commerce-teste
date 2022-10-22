@@ -55,8 +55,10 @@ export default function CategoryHighlight({ index }) {
     }
 
     return (
-        <>
-            <h1 className='highlight-title'>{!index ? `Destaques` : `Destaques em ${category}`}</h1>
+        <section className='section-highlights'>
+            <>
+                <h1 className='highlight-title'>{!index ? `Destaques` : `Destaques em ${category}`}</h1>
+            </>
             <div className='container-highlights'>
                 <img className='previous-arrow' onClick={() => handlePagination('previous')} src={PreviousArrow} alt="previous arrow" />
                 <div className="container-cards">
@@ -71,6 +73,6 @@ export default function CategoryHighlight({ index }) {
                 </div>
                 <img className='next-arrow' onClick={() => handlePagination('next')} src={NextArrow} alt="next arrow" />
             </div>
-        </>
+        </section>
     )
 }

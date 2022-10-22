@@ -2,6 +2,14 @@
     position: relative;
 }
 
+.shadow-banner {
+    position: absolute;
+    width: 100vw;
+    height: 374px;
+    background: linear-gradient(90.99deg, #000000 1.53%, rgba(32, 32, 32, 0.52) 56.83%, rgba(196, 196, 196, 0) 98.06%);
+    opacity: 90%;
+}
+
 .image-banner {
     width: 100vw;
     height: 374px;
@@ -9,7 +17,6 @@
     background-image: url(../../assets/images/banner.jpeg);
     background-position-y: -200px;
     background-size: cover;
-
 }
 
 .title-banner {
