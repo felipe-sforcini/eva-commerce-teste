@@ -2,20 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 32px;
 }
 
 .container-highlights {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.previous-arrow {
-    margin-right: 33px;
-}
-
-.next-arrow {
-    margin-left: 33px;
+    justify-content: space-between;
+    gap: 32px;
 }
 
 .highlight-title {

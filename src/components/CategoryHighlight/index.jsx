@@ -60,16 +60,14 @@ export default function CategoryHighlight({ index }) {
             <div className='container-highlights'>
                 <img className='previous-arrow' onClick={() => handlePagination('previous')} src={PreviousArrow} alt="previous arrow" />
                 <div className="container-cards">
-                    {items.slice(pagination.start, pagination.end).map((product) => {
-                        return (
-                            <CardProduct
-                                key={product.id}
-                                image={product.images_product[0]}
-                                name={product.name}
-                                price={product.price}
-                            />
-                        )
-                    })}
+                    {items.slice(pagination.start, pagination.end).map((product) => (
+                        <CardProduct
+                            key={product.id}
+                            image={product.images_product[0]}
+                            name={product.name}
+                            price={product.price}
+                        />
+                    ))}
                 </div>
                 <img className='next-arrow' onClick={() => handlePagination('next')} src={NextArrow} alt="next arrow" />
             </div>
