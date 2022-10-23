@@ -68,3 +68,9 @@ header {
 .color-white {
     filter: invert(100%);
 }
+
+@media (max-width: 600px) {
+    .container-navigation {
+        display: none;
+    }
+}

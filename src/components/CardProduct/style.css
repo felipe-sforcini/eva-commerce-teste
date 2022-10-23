@@ -7,6 +7,7 @@
     height: 55rem;
     width: 18vw;
     padding: 1.8rem;
+
 }
 
 .container-card:hover {
@@ -57,6 +58,7 @@
 
 .card-image {
     height: 50%;
+    width: 100%;
     object-fit: scale-down;
 }
 
@@ -81,14 +83,14 @@
 }
 
 @media (max-width: 768px) {
-    .card-image {
+    /* .card-image {
         height: 30%;
-    }
+    } */
 
     .container-card {
-        width: 12rem;
+        width: 100%;
         padding: 0.5rem;
-        gap: 2rem;
+        height: 100%;
     }
 
     .card-product__title {
