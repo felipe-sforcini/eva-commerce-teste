@@ -100,6 +100,7 @@ export default function CategoryHighlight({ index }) {
 
             <section className='section-highlights-mobile'>
                 <>
+                    <img className='purple-line' src={PurpleLine} alt="purple line" />
                     <h1 className='highlight-title'>{!index ? `Destaques` : `Destaques em ${category}`}</h1>
                 </>
                 <div className='container-highlights'>

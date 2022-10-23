@@ -1,6 +1,7 @@
 .section-highlights {
     display: flex;
     flex-direction: column;
+    margin-bottom: 8rem;
 }
 
 .container-cards {
@@ -42,18 +43,25 @@
     }
 
     .section-highlights-mobile {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8rem;
+        width: 90vw;
     }
 
     .container-highlights {
-        gap: 0.6rem;
+        gap: 3rem;
+        width: 50vw;
     }
 
-    .next-arrow {
+    .next-arrow,
+    .previous-arrow {
         margin: 0;
     }
 
     .container-cards {
-        gap: 0;
+        gap: 3rem;
     }
 }

@@ -3,12 +3,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0.2rem;
     width: 26rem;
     padding: 1.8rem;
 }
 
 .container-card:hover {
     outline: 2px solid #BA0668;
+}
+
+.container-card span {
+    display: block;
+    text-align: center;
 }
 
 .card-image {
@@ -19,11 +25,11 @@
 
 @media (max-width: 768px) {
     .card-image {
-        width: 12rem;
+        width: 11rem;
     }
 
     .container-card {
-        width: 15rem;
-        padding: 1rem;
+        width: 10rem;
+        padding: 0.5rem;
     }
 }
