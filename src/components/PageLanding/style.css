@@ -84,6 +84,7 @@
     border-right: 0.1rem solid #DADFEB;
 }
 
+
 .payment-card,
 .delivery {
     padding-left: 10%;
@@ -119,4 +120,22 @@
         font-size: 2rem;
         line-height: 2rem;
     }
+}
+
+@media (max-width: 600px) {
+    .icon-pageLanding {
+        transform: scale(0.8);
+    }
+
+    /* 
+    .safe-website,
+    .payment-card {
+        padding-right: 5%;
+    }
+
+    .payment-card,
+    .delivery {
+        padding-left: 5%;
+    } */
+
 }
