@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './style.css';
 
-export default function CardProduct({ index, image, name, price }) {
+export default function CardProduct({ index, image, name, price, previousPrice }) {
 
     const [images, setImages] = useState();
 
@@ -21,8 +21,12 @@ export default function CardProduct({ index, image, name, price }) {
     return (
         <div className='container-card'>
             <img className='card-image' key={index} src={images} alt={name} />
-            <span>{name}</span>
-            <strong>R$ {Number(price).toFixed(2).replace('.', ',')}</strong>
+            <span className='card-product__title'>{name}</span>
+            <div className="prices">
+                <span className='card-product__previousPrice'>{previousPrice}</span>
+                <strong>R$ {Number(price).toFixed(2).replace('.', ',')}</strong>
+            </div>
+            <button className='btn-card'>Comprar</button>
         </div>
     )
 }

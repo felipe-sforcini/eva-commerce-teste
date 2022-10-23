@@ -18,6 +18,7 @@ export default function CategoryHighlight({ index }) {
         start: 0,
         end: 2
     });
+    const [previousPrice, setPreviousPrice] = useState([]);
 
     try {
         useEffect(() => {
@@ -78,10 +79,10 @@ export default function CategoryHighlight({ index }) {
     return (
         <>
             <section className='section-highlights'>
-                <>
-                    <img className='purple-line' src={PurpleLine} alt="purple line" />
-                    <h1 className='highlight-title'>{!index ? `Destaques` : `Destaques em ${category}`}</h1>
-                </>
+                <div className='title-highlight'>
+                    <img src={PurpleLine} alt="purple line" />
+                    <h1 >{!index ? `Destaques` : `Destaques em ${category}`}</h1>
+                </div>
                 <div className='container-highlights'>
                     <img className='previous-arrow' onClick={() => handlePagination('previous')} src={PreviousArrow} alt="previous arrow" />
                     <div className="container-cards">
@@ -90,7 +91,8 @@ export default function CategoryHighlight({ index }) {
                                 key={product.id}
                                 image={product.images_product[0]}
                                 name={product.name}
-                                price={product.price}
+                                price={product.promotional_price ? product.promotional_price : product.price}
+                                previousPrice={product.promotional_price ? `R$ ${Number(product.price).toFixed(2).replace('.', ',')}` : null}
                             />
                         ))}
                     </div>
@@ -99,10 +101,10 @@ export default function CategoryHighlight({ index }) {
             </section>
 
             <section className='section-highlights-mobile'>
-                <>
-                    <img className='purple-line' src={PurpleLine} alt="purple line" />
-                    <h1 className='highlight-title'>{!index ? `Destaques` : `Destaques em ${category}`}</h1>
-                </>
+                <div className='title-highlight'>
+                    <img src={PurpleLine} alt="purple line" />
+                    <h1 >{!index ? `Destaques` : `Destaques em ${category}`}</h1>
+                </div>
                 <div className='container-highlights'>
                     <img className='previous-arrow' onClick={() => handlePaginationMobile('previous')} src={PreviousArrow} alt="previous arrow" />
                     <div className="container-cards">
@@ -111,7 +113,8 @@ export default function CategoryHighlight({ index }) {
                                 key={product.id}
                                 image={product.images_product[0]}
                                 name={product.name}
-                                price={product.price}
+                                price={product.promotional_price ? product.promotional_price : product.price}
+                                previousPrice={product.promotional_price ? `R$ ${Number(product.price).toFixed(2).replace('.', ',')}` : null}
                             />
                         ))}
                     </div>

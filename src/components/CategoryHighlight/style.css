@@ -2,23 +2,23 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 8rem;
+    gap: 3rem;
 }
 
 .container-cards {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3.2rem;
 }
 
 .container-highlights {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6rem;
+    gap: 3rem;
 }
 
-.highlight-title {
+.title-highlight {
     align-self: flex-start;
     justify-self: left;
 }
@@ -46,6 +46,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
         justify-content: center;
         margin-bottom: 8rem;
         width: 90vw;
@@ -53,7 +54,6 @@
 
     .container-highlights {
         gap: 3rem;
-        width: 50vw;
     }
 
     .next-arrow,
@@ -62,6 +62,6 @@
     }
 
     .container-cards {
-        gap: 3rem;
+        gap: 2rem;
     }
 }
