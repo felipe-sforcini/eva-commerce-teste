@@ -17,6 +17,7 @@
     background-image: url(../../assets/images/banner.jpeg);
     background-position-y: -20rem;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .title-banner {

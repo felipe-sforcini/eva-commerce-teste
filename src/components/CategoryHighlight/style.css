@@ -20,3 +20,30 @@
 .highlight-title {
     align-self: flex-start;
 }
+
+.section-highlights-mobile {
+    display: none;
+}
+
+.next-arrow,
+.previous-arrow {
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .section-highlights {
+        display: none;
+    }
+
+    .section-highlights-mobile {
+        display: block;
+    }
+
+    .container-highlights {
+        gap: 0.6rem;
+    }
+
+    .next-arrow {
+        margin: 0;
+    }
+}

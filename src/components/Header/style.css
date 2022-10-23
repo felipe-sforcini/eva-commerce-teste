@@ -13,6 +13,7 @@ header {
     width: 8rem;
     height: 3.2rem;
     margin-left: 16.4rem;
+    object-fit: scale-down;
 }
 
 .container-navigation {
@@ -31,7 +32,7 @@ header {
     cursor: pointer;
     margin-right: 3.2rem;
 
-    font-weight: 300;
+    font-weight: 30rem;
     font-size: 1.6rem;
     line-height: 1.9rem;
 

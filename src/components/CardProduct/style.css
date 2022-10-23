@@ -12,3 +12,14 @@
     height: 25rem;
     object-fit: scale-down;
 }
+
+@media (max-width: 480px) {
+    .card-image {
+        width: 12rem;
+    }
+
+    .container-card {
+        width: 15rem;
+        padding: 1rem;
+    }
+}

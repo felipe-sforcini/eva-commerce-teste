@@ -13,6 +13,10 @@ export default function CategoryHighlight({ index }) {
         start: 0,
         end: 4
     });
+    const [paginationMobile, setPaginationMobile] = useState({
+        start: 0,
+        end: 2
+    });
 
     try {
         useEffect(() => {
@@ -54,25 +58,63 @@ export default function CategoryHighlight({ index }) {
         });
     }
 
+    function handlePaginationMobile(value) {
+        let start = paginationMobile.start;
+        let end = paginationMobile.end;
+
+        if (value === 'previous' && start > 0) {
+            start -= 2;
+            end -= 2;
+        } else if (value === 'next' && end < items.length) {
+            start += 2;
+            end += 2;
+        }
+        setPaginationMobile({
+            start, end
+        });
+    }
+
     return (
-        <section className='section-highlights'>
-            <>
-                <h1 className='highlight-title'>{!index ? `Destaques` : `Destaques em ${category}`}</h1>
-            </>
-            <div className='container-highlights'>
-                <img className='previous-arrow' onClick={() => handlePagination('previous')} src={PreviousArrow} alt="previous arrow" />
-                <div className="container-cards">
-                    {items.slice(pagination.start, pagination.end).map((product) => (
-                        <CardProduct
-                            key={product.id}
-                            image={product.images_product[0]}
-                            name={product.name}
-                            price={product.price}
-                        />
-                    ))}
+        <>
+            <section className='section-highlights'>
+                <>
+                    <h1 className='highlight-title'>{!index ? `Destaques` : `Destaques em ${category}`}</h1>
+                </>
+                <div className='container-highlights'>
+                    <img className='previous-arrow' onClick={() => handlePagination('previous')} src={PreviousArrow} alt="previous arrow" />
+                    <div className="container-cards">
+                        {items.slice(pagination.start, pagination.end).map((product) => (
+                            <CardProduct
+                                key={product.id}
+                                image={product.images_product[0]}
+                                name={product.name}
+                                price={product.price}
+                            />
+                        ))}
+                    </div>
+                    <img className='next-arrow' onClick={() => handlePagination('next')} src={NextArrow} alt="next arrow" />
                 </div>
-                <img className='next-arrow' onClick={() => handlePagination('next')} src={NextArrow} alt="next arrow" />
-            </div>
-        </section>
+            </section>
+
+            <section className='section-highlights-mobile'>
+                <>
+                    <h1 className='highlight-title'>{!index ? `Destaques` : `Destaques em ${category}`}</h1>
+                </>
+                <div className='container-highlights'>
+                    <img className='previous-arrow' onClick={() => handlePaginationMobile('previous')} src={PreviousArrow} alt="previous arrow" />
+                    <div className="container-cards">
+                        {items.slice(paginationMobile.start, paginationMobile.end).map((product) => (
+                            <CardProduct
+                                key={product.id}
+                                image={product.images_product[0]}
+                                name={product.name}
+                                price={product.price}
+                            />
+                        ))}
+                    </div>
+                    <img className='next-arrow' onClick={() => handlePaginationMobile('next')} src={NextArrow} alt="next arrow" />
+                </div>
+            </section>
+        </>
     )
 }
