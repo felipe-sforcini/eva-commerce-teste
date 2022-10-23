@@ -3,12 +3,13 @@ import StoreIcon from '../../assets/footer/StoreIcon';
 import MapIcon from '../../assets/footer/MapIcon';
 import WhatsAppIcon from '../../assets/footer/WhatsAppIcon';
 import EmailIcon from '../../assets/footer/EmailIcon';
+import FooterLine from '../../assets/svg/footer-line.svg';
 
 export default function Footer() {
     return (
         <footer>
             <strong>Eva Shop</strong>
-            <div></div>
+            <img src={FooterLine} alt="gray line" />
             <div className='info'>
                 <div className="container container-menu">
                     <nav className='navigation-menu'>
@@ -20,10 +21,10 @@ export default function Footer() {
                                 alt="icon store" />
                         </div>
                         <ul>
-                            <li> Quem somos</li>
-                            <li>Políticas de privacidade</li>
-                            <li>Feedback de clientes</li>
-                            <li>Trocas e devoluções</li>
+                            <li> <a href="#">Quem somos</a></li>
+                            <li><a href="#">Políticas de privacidade</a></li>
+                            <li><a href="#">Feedback de clientes</a></li>
+                            <li><a href="#"> Trocas e devoluções</a></li>
                         </ul>
                     </nav>
                 </div>

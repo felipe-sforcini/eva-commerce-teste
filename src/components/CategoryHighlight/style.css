@@ -14,11 +14,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3.2rem;
+    gap: 6rem;
 }
 
 .highlight-title {
     align-self: flex-start;
+    justify-self: left;
 }
 
 .section-highlights-mobile {
@@ -30,7 +31,12 @@
     margin: 0;
 }
 
-@media (max-width: 480px) {
+.purple-line {
+    align-self: flex-start;
+    justify-self: left;
+}
+
+@media (max-width: 768px) {
     .section-highlights {
         display: none;
     }
@@ -45,5 +51,9 @@
 
     .next-arrow {
         margin: 0;
+    }
+
+    .container-cards {
+        gap: 0;
     }
 }

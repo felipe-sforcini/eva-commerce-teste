@@ -1,5 +1,6 @@
 header {
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
 
@@ -10,9 +11,8 @@ header {
 }
 
 .logo {
-    width: 8rem;
     height: 3.2rem;
-    margin-left: 16.4rem;
+    margin-left: 8%;
     object-fit: scale-down;
 }
 

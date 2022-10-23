@@ -4,6 +4,7 @@ import PreviousArrow from '../../assets/svg/previous-arrow.svg';
 import NextArrow from '../../assets/svg/next-arrow.svg';
 import { useState, useEffect } from 'react';
 import api from '../../services/api';
+import PurpleLine from '../../assets/svg/purple-line.svg';
 
 export default function CategoryHighlight({ index }) {
 
@@ -78,6 +79,7 @@ export default function CategoryHighlight({ index }) {
         <>
             <section className='section-highlights'>
                 <>
+                    <img className='purple-line' src={PurpleLine} alt="purple line" />
                     <h1 className='highlight-title'>{!index ? `Destaques` : `Destaques em ${category}`}</h1>
                 </>
                 <div className='container-highlights'>
