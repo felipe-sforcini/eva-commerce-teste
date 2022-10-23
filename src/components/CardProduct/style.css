@@ -83,9 +83,9 @@
 }
 
 @media (max-width: 768px) {
-    /* .card-image {
-        height: 30%;
-    } */
+    .card-image {
+        height: 25vh;
+    }
 
     .container-card {
         width: 100%;
@@ -96,6 +96,7 @@
     .card-product__title {
         font-size: 1.2rem;
         line-height: 1.6rem;
+        height: 2%;
     }
 
     .container-card strong {
