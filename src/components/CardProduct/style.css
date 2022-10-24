@@ -24,7 +24,16 @@
 
     color: #000000;
 
-    height: 12%;
+    height: 2.4rem;
+
+}
+
+.stars {
+    height: 2rem;
+}
+
+.stars img {
+    height: 100%;
 }
 
 .prices {

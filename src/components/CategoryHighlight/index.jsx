@@ -93,6 +93,7 @@ export default function CategoryHighlight({ index }) {
                                 name={product.name}
                                 price={product.promotional_price ? product.promotional_price : product.price}
                                 previousPrice={product.promotional_price ? `R$ ${Number(product.price).toFixed(2).replace('.', ',')}` : null}
+                                stars={product.stars}
                             />
                         ))}
                     </div>
@@ -115,6 +116,7 @@ export default function CategoryHighlight({ index }) {
                                 name={product.name}
                                 price={product.promotional_price ? product.promotional_price : product.price}
                                 previousPrice={product.promotional_price ? `R$ ${Number(product.price).toFixed(2).replace('.', ',')}` : null}
+                                stars={product.stars}
                             />
                         ))}
                     </div>

@@ -9,8 +9,8 @@ export default function Newsletter() {
                 <span>Receba nossas novidades, descontos e muito mais</span>
             </section>
             <form className='formSubmit'>
-                <input className='form' type="text" placeholder='Digite seu nome' />
-                <input className='form' type="email" placeholder='Digite seu email' />
+                <input className='form' type="text" placeholder='Digite seu nome' required />
+                <input className='form' type="email" placeholder='Digite seu email' required />
             </form>
             <button className='btn-newsletter' type='submit'>Eu quero receber novidades!</button>
         </div>
