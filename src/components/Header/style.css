@@ -8,6 +8,8 @@ header {
     width: 100vw;
 
     background-color: #000;
+
+    position: relative;
 }
 
 .logo {
@@ -69,8 +71,47 @@ header {
     filter: invert(100%);
 }
 
-@media (max-width: 600px) {
-    .container-navigation {
+.categories {
+    position: relative;
+}
+
+.modal-categories {
+    position: absolute;
+    z-index: 3;
+    top: 3rem;
+    left: 1.8rem;
+    background-color: #fff;
+    padding: 0.5rem 3rem 0.1rem 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-categories ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-categories li {
+    list-style: none;
+    color: #000000;
+    border-bottom: 0.1rem solid #DADFEB;
+    padding: 0.3rem;
+}
+
+.container-menu {
+    display: none;
+    height: 50%;
+}
+
+.modal-menu {
+    display: none;
+}
+
+@media (max-width: 920px) {
+    header {
         display: none;
     }
 }
