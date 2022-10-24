@@ -1,3 +1,12 @@
+.container-pageLanding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
 .container-banner {
     position: relative;
 }
@@ -90,9 +99,62 @@
     padding-left: 10%;
 }
 
+.categories__page-landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 40vh;
+    margin-bottom: 8rem;
+}
+
+.category-img__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 20%;
+    color: #fff;
+
+}
+
+.category-img__container strong {
+    margin-bottom: 2rem;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #FDFDFD;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.category-book {
+    background: linear-gradient(22.05deg, rgba(0, 0, 0, 0.5) 14.41%, rgba(73, 73, 73, 0.5) 57.21%, rgba(255, 255, 255, 0) 100%), url(../../assets/images/category-1.jpeg);
+
+}
+
+.category-office {
+    background: linear-gradient(22.05deg, rgba(0, 0, 0, 0.5) 14.41%, rgba(73, 73, 73, 0.5) 57.21%, rgba(255, 255, 255, 0) 100%), url(../../assets/images/category-2.jpeg);
+}
+
+.category-clothes {
+    background: linear-gradient(22.05deg, rgba(0, 0, 0, 0.5) 14.41%, rgba(73, 73, 73, 0.5) 57.21%, rgba(255, 255, 255, 0) 100%), url(../../assets/images/category-3.jpeg);
+}
+
+.category-book,
+.category-clothes,
+.category-office {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media (max-width: 920px) {
     .image-banner {
-        width: 100%;
+        width: 100vw;
         height: 25vh;
         background-position-y: 0;
     }
@@ -105,9 +167,7 @@
     .title-banner {
         display: flex;
         flex-direction: column;
-
         gap: 1rem;
-
         position: absolute;
         left: 2rem;
         bottom: 2rem;
@@ -120,10 +180,17 @@
         font-size: 2rem;
         line-height: 2rem;
     }
-}
 
-@media (max-width: 920px) {
     .icon-pageLanding {
         transform: scale(0.8);
+    }
+
+    .categories__page-landing {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .category-img__container {
+        width: 100vw;
     }
 }

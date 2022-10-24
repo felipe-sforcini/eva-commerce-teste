@@ -11,7 +11,7 @@ export default function Footer() {
             <strong>Eva Shop</strong>
             <img src={FooterLine} alt="gray line" />
             <div className='info'>
-                <div className="container container-menu">
+                <div className="container container-menu__footer">
                     <nav className='navigation-menu'>
                         <div className="icon-footer">
                             <StoreIcon

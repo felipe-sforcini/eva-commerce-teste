@@ -3,6 +3,7 @@ import PadlockIcon from '../../assets/pageLanding/PadlockIcon';
 import TruckIcon from '../../assets/pageLanding/TruckIcon';
 import './style.css';
 
+
 export default function PageLanding() {
     return (
         <div className="container-pageLanding">
@@ -41,6 +42,17 @@ export default function PageLanding() {
                         alt='truck icon'
                     />
                     <span>Entrega para todo o Brasil</span>
+                </div>
+            </div>
+            <div className="categories__page-landing">
+                <div className="category-img__container category-book">
+                    <strong >Livros</strong>
+                </div>
+                <div className="category-img__container category-office">
+                    <strong>Escritório</strong>
+                </div>
+                <div className="category-img__container category-clothes">
+                    <strong>Vestuário</strong>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ footer {
 
     width: 100vw;
     padding: 3.2rem 42.2rem 3.2rem 16.4rem;
+
 }
 
 footer strong {
@@ -39,8 +40,6 @@ a {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.9rem;
-
-    margin-bottom: 6%;
 
     color: inherit;
 }
@@ -93,4 +92,5 @@ a {
     .navigation-menu li {
         margin-bottom: 2rem;
     }
+
 }
