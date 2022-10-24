@@ -7,6 +7,12 @@ Para mais informações sobre criar um projeto em React: [Create React App](http
 
 ## Rodando o projeto localmente:
 
+Clonar o repositório em SSH:
+### `git clone git@github.com:felipe-sforcini/eva-commerce-teste.git`
+
+Clonar o repositório em HTTPS:
+### `git clone https://github.com/felipe-sforcini/eva-commerce-teste.git`
+
 No diretório do projeto digitar o comando:
 
 ### `npm install`
