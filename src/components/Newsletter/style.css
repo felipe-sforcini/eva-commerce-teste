@@ -28,8 +28,16 @@
 
 .formSubmit {
     display: flex;
-    gap: 0 0.8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     margin-bottom: 5.9rem;
+}
+
+.container-inputs__form {
+    display: flex;
+    gap: 5rem;
 }
 
 .form {
@@ -59,6 +67,14 @@
     border-radius: 0.8rem;
 }
 
+.error {
+    color: #d4e23b;
+}
+
+.success {
+    color: #18d34a;
+}
+
 @media (max-width: 600px) {
     .container-newsletter {
         width: 100vw;
@@ -74,5 +90,10 @@
         flex-direction: column;
         gap: 2rem;
         margin-bottom: 2.6rem;
+    }
+
+    .container-inputs__form {
+        flex-direction: column;
+        gap: 2rem;
     }
 }

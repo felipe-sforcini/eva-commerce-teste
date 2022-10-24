@@ -31,7 +31,6 @@ export default function CardProduct({ index, image, name, price, previousPrice, 
                 {Stars.map((star, k) => {
                     const ratingValue = k + 1;
                     const starColor = ratingValue <= rating ? `${FullStar}` : `${EmptyStar}`
-                    console.log(starColor);
                     return (
                         <img src={starColor} key={k} />
                     );

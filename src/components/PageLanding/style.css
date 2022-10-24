@@ -117,6 +117,7 @@
     width: 20%;
     color: #fff;
 
+    cursor: pointer;
 }
 
 .category-img__container strong {

@@ -29,7 +29,7 @@
 }
 
 .stars {
-    height: 2rem;
+    height: 1.8rem;
 }
 
 .stars img {
@@ -122,5 +122,9 @@
 
     .card-product__previousPrice {
         font-size: 1rem;
+    }
+
+    .stars {
+        transform: scale(0.65);
     }
 }

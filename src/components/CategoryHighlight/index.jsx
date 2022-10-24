@@ -18,7 +18,6 @@ export default function CategoryHighlight({ index }) {
         start: 0,
         end: 2
     });
-    const [previousPrice, setPreviousPrice] = useState([]);
 
     try {
         useEffect(() => {

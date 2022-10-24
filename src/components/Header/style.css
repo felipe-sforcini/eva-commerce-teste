@@ -58,6 +58,7 @@ header {
 .search-icon {
     position: absolute;
     right: 4.5rem;
+    cursor: pointer;
 }
 
 .navigation-icon {
