@@ -7,6 +7,7 @@ export default function CardProduct({ index, image, name, price, previousPrice, 
 
     const [images, setImages] = useState();
     const [rating, setRating] = useState(0);
+    const [off, setOff] = useState(5);
     const Stars = Array(5).fill("");
 
     try {
@@ -15,6 +16,13 @@ export default function CardProduct({ index, image, name, price, previousPrice, 
                 const productImage = await image;
                 setImages(productImage.path);
                 setRating(stars);
+                if (price > 200) {
+                    setOff(15);
+                } else if (price > 80) {
+                    setOff(10);
+                } else {
+                    setOff(5);
+                }
             }
             loadCard();
         }, []);
@@ -39,6 +47,9 @@ export default function CardProduct({ index, image, name, price, previousPrice, 
             <div className="prices">
                 <span className='card-product__previousPrice'>{previousPrice}</span>
                 <strong>R$ {Number(price).toFixed(2).replace('.', ',')}</strong>
+                <span className='off-price'>
+                    Ou R$ {(price - (off / 100 * (price))).toFixed(2).replace('.', ',')} com {off}% no boleto
+                </span>
             </div>
             <button className='btn-card'>Comprar</button>
         </div>

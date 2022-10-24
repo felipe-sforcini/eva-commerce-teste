@@ -41,6 +41,7 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 2.4rem;
+    margin-top: 3%;
 }
 
 .card-product__previousPrice {
@@ -85,6 +86,16 @@
 
     background: #E11383;
     border-radius: 0.8rem;
+}
+
+.off-price {
+    ont-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+    text-align: center;
+
+    color: #000000;
 }
 
 .container-card:hover .btn-card {

@@ -79,4 +79,9 @@
     .hidden {
         display: none;
     }
+
+    .modal-categories ul {
+        gap: 2rem;
+        transform: scale(0.8);
+    }
 }
