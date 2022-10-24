@@ -48,7 +48,7 @@ export default function CardProduct({ index, image, name, price, previousPrice, 
                 <span className='card-product__previousPrice'>{previousPrice}</span>
                 <strong>R$ {Number(price).toFixed(2).replace('.', ',')}</strong>
                 <span className='off-price'>
-                    Ou R$ {(price - (off / 100 * (price))).toFixed(2).replace('.', ',')} com {off}% no boleto
+                    Ou R$ {(price - (off / 100 * (price))).toFixed(2).replace('.', ',')} com {off}% off no boleto
                 </span>
             </div>
             <button className='btn-card'>Comprar</button>
